@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>計算機</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <div>
+        <input class="result" type="text" id="result" value="0">
+      </div>
+      <div class="button_wrap">
+        <div class="buttons">
+          <button class="button" type="submit" value="0" onclick="all_clear(this)">AC</button>
+          <button class="button" type="submit" value="">　</button>
+          <button class="button" type="submit" value="/100" onclick="percentage(this)">％</button>
+          <button class="button" type="submit" value="/" onclick="division(this)">÷</button>
+        </div>
+        <div class="buttons">
+          <button class="button" type="submit" value="7" onclick="result_text(this)">７</button>
+          <button class="button" type="submit" value="8" onclick="result_text(this)">８</button>
+          <button class="button" type="submit" value="9" onclick="result_text(this)">９</button>
+          <button class="button" type="submit" value="*" onclick="multiply(this)">×</button>
+        </div>
+        <div class="buttons">
+          <button class="button" type="submit" value="4" onclick="result_text(this)">４</button>
+          <button class="button" type="submit" value="5" onclick="result_text(this)">５</button>
+          <button class="button" type="submit" value="6" onclick="result_text(this)">６</button>
+          <button class="button" type="submit" value="-" onclick="minus(this)">−</button>
+        </div>
+        <div class="buttons">
+          <button class="button" type="submit" value="1" onclick="result_text(this)">１</button>
+          <button class="button" type="submit" value="2" onclick="result_text(this)">２</button>
+          <button class="button" type="submit" value="3" onclick="result_text(this)">３</button>
+          <button class="button" type="submit" value="+" onclick="plus(this)">＋</button>
+        </div>
+        <div class="buttons">
+          <button class="button" type="submit" value="0" onclick="result_text(this)">０</button>
+          <button class="button" type="submit" value="00" onclick="result_text(this)">00</button>
+          <button class="button" type="submit" value="." onclick="decimal(this)">.</button>
+          <button class="button" type="submit" value="=" onclick="result_calculator()">＝</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
